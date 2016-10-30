@@ -1,0 +1,35 @@
+mixin mobile-menu()
+	+b.mobile-menu&attributes(attributes)
+		+e.toggle-button
+			+e('span').toggle-button-item
+			+e('span').toggle-button-item
+			+e('span').toggle-button-item
+			+e('span').toggle-button-item
+
+		+e.menu
+			+e.menu-wrap
+				+e('ul').list
+					+e('li').list-item
+						+e('a').list-link(href=jv0)
+							| афиша
+					+e('li').list-item
+						+e('a').list-link(href='/subscriptions.html')
+							| абонементы
+					+e('li').list-item
+						+e('a').list-link(href=jv0)
+							| о нас
+					+e('li').list-item
+						+e('a').list-link(href=jv0)
+							| астрошкола
+					+e('li').list-item
+						+e('a').list-link(href='/contacts.html')
+							| контакты
+				+e.phone
+					+e.number-phone-wrap
+						+e('span').sub-number-phone
+							| 044
+						+e('span').sub-number-phone
+							| 067
+					+e.number-phone
+						| 338-19-91
+

@@ -1,0 +1,9 @@
+include ../blocks/contacts/contacts
+
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Contacts';
+
+block content
+	+contacts()

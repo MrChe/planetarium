@@ -1,0 +1,57 @@
+mixin footer()
+	+b('footer').footer&attributes(attributes)
+		.container
+			.row
+				.col-xs-12.col-sm-4
+					+e.list-map-nav
+						+e('h4').list-map-nav-title
+							| Карта сайта
+						+e('ul').map-nav
+							+e('li').map-nav-item
+								+e('a').map-nav-link(href='/')
+									| Главная
+							+e('li').map-nav-item
+								+e('a').map-nav-link(href=jv0)
+									| О нас
+							+e('li').map-nav-item
+								+e('a').map-nav-link(href=jv0)
+									| Афиша
+							+e('li').map-nav-item
+								+e('a').map-nav-link(href=jv0)
+									| Астрошкола
+							+e('li').map-nav-item
+								+e('a').map-nav-link(href='/subscriptions.html')
+									| Абонементы
+							+e('li').map-nav-item
+								+e('a').map-nav-link(href='/contacts.html')
+									| Контакты
+				.col-xs-12.col-sm-4
+					+e.partners
+						+e('a').logo-footer(href='/')
+							+e('img').logo-footer-img(src='assets/images/logo.png')
+						+e.wrap-links-partner
+							+e('a').link-partner(href=jv0)
+								+e('img').link-partner-img(src='assets/images/mastercard.png')
+							+e('a').link-partner(href=jv0)
+								+e('img').link-partner-img(src='assets/images/visa.png')
+							+e('a').link-partner(href=jv0)
+								+e('img').link-partner-img(src='assets/images/webmoney.png')
+
+				.col-xs-12.col-sm-4
+					+e.links
+						+e.socials
+							+e('a').social-link(href=jv0)
+								+icon('youtube-logo')
+							+e('a').social-link(href=jv0)
+								+icon('twitter-logo')
+							+e('a').social-link(href=jv0)
+								+icon('facebook-logo')
+							+e('a').social-link(href=jv0)
+								+icon('vkontakte-logo')
+
+						+e('a').link-bzni(href=jv0)
+							+e('img').bzni-img(src='assets/images/bzni.png')
+			.row
+				.col-xs-12
+					+e('p').copyright
+						| ©2016 Всi права захiщены “Киiевський планетарiй”

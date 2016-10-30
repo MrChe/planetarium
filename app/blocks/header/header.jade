@@ -1,0 +1,45 @@
+include ../mobile-menu/mobile-menu
+mixin header()
+	+b('header').header&attributes(attributes)
+		.container
+			.row
+				.col-xs-12.col-sm-4
+					+e('a').logo(href='/')
+						+e('img').logo-img(src='assets/images/logo.png')
+					+mobile-menu()
+				.hidden-xs.col-sm-8
+					+e('ul').navigation
+						+e('li').navigation-item
+							+e('a').navigation-link(href=jv0)
+								| афиша
+						+e('li').navigation-item
+							+e('a').navigation-link(href='/subscriptions.html')
+								| абонементы
+						+e('li').navigation-item
+							+e('a').navigation-link(href=jv0)
+								| о нас
+						+e('li').navigation-item
+							+e('a').navigation-link(href=jv0)
+								| астрошкола
+						+e('li').navigation-item
+							+e('a').navigation-link(href='/contacts.html')
+								| контакты
+					+e.contact-info
+						+e.phone
+							+e.number-phone-wrap
+								+e('span').sub-number-phone
+									| 044
+								+e('span').sub-number-phone
+									| 067
+							+e.number-phone
+								| 338-19-91
+						+e.socials
+							+e('a').social-link(href=jv0)
+								+icon('youtube-logo')
+							+e('a').social-link(href=jv0)
+								+icon('twitter-logo')
+							+e('a').social-link(href=jv0)
+								+icon('facebook-logo')
+							+e('a').social-link(href=jv0)
+								+icon('vkontakte-logo')
+

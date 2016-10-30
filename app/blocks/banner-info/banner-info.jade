@@ -1,0 +1,22 @@
+mixin banner-info()
+	+b.banner-info&attributes(attributes)
+		.container
+			.row
+				.col-xs-12.col-sm-4
+					+e.info-subscriptions
+						+e('h2').info-subscriptions-title
+							| Шкільні
+							+e.info-subscriptions-title-bold
+								| абонементи
+						+e('p').text
+							| Київський Планетарій запрошує школярів в гості
+							| до зірок і пропонує Абонементи за шкільною програмою
+							| з природознавства (1-4 клас) і астрономії (11 клас).
+
+				.col-xs-12.col-sm-4
+					+e.wrap-img
+						+e('img').img(src='assets/images/cometa.png')
+
+				.col-xs-12.col-sm-4
+					+e('p').text
+						| Комета Чурюмова—Герасименко  67P/Churyumov–Gerasimenko) — короткоперіодична комета з  періодом обертання 6,6 року.  Комету було відкрито 23 жовтня  1969 року Климом Чурюмовим у  Києві в результаті вивчення  фотопластинок комети  32P/Комас Сола, знятих  Світланою Герасименко в Алма-  Атинській обсерваторії у вересні  того ж року.

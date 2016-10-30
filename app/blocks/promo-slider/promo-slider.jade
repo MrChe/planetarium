@@ -1,0 +1,24 @@
+mixin promo-slider()
+	+b.promo-slider&attributes(attributes)
+		+e.slider-container.swiper-container
+			+e.slider-wrapper.swiper-wrapper
+				+e.slider-slide.swiper-slide
+					+e.wrapper-slide
+						+e.slide-img(style="background-image: url(/assets/images/promo1.png)")
+						+e.wrap-btn
+							+e('a').button-more(href=jv0)
+								| Купити/забронювати
+				+e.slider-slide.swiper-slide
+					+e.wrapper-slide
+						+e.slide-img(style="background-image: url(/assets/images/promo1.png)")
+						+e.wrap-btn
+							+e('a').button-more(href=jv0)
+								| Купити/забронювати
+				+e.slider-slide.swiper-slide
+					+e.wrapper-slide
+						+e.slide-img(style="background-image: url(/assets/images/promo1.png)")
+						+e.wrap-btn
+							+e('a').button-more(href=jv0)
+								| Купити/забронювати
+			+e.slider-btn-prev.swiper-button-prev
+			+e.slider-btn-next.swiper-button-next
