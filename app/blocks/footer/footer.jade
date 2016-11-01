@@ -26,19 +26,9 @@ mixin footer()
 								+e('a').map-nav-link(href='/contacts.html')
 									| Контакты
 				.col-xs-12.col-sm-4
-					+e.partners
+					+e.links
 						+e('a').logo-footer(href='/')
 							+e('img').logo-footer-img(src='assets/images/logo.png')
-						+e.wrap-links-partner
-							+e('a').link-partner(href=jv0)
-								+e('img').link-partner-img(src='assets/images/mastercard.png')
-							+e('a').link-partner(href=jv0)
-								+e('img').link-partner-img(src='assets/images/visa.png')
-							+e('a').link-partner(href=jv0)
-								+e('img').link-partner-img(src='assets/images/webmoney.png')
-
-				.col-xs-12.col-sm-4
-					+e.links
 						+e.socials
 							+e('a').social-link(href=jv0)
 								+icon('youtube-logo')
@@ -48,6 +38,17 @@ mixin footer()
 								+icon('facebook-logo')
 							+e('a').social-link(href=jv0)
 								+icon('vkontakte-logo')
+
+
+				.col-xs-12.col-sm-4
+					+e.partners
+						+e.wrap-links-partner
+							+e('a').link-partner(href=jv0)
+								+e('img').link-partner-img(src='assets/images/mastercard.png')
+							+e('a').link-partner(href=jv0)
+								+e('img').link-partner-img(src='assets/images/visa.png')
+							+e('a').link-partner(href=jv0)
+								+e('img').link-partner-img(src='assets/images/webmoney.png')
 
 						+e('a').link-bzni(href=jv0)
 							+e('img').bzni-img(src='assets/images/bzni.png')

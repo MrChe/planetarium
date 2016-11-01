@@ -19,10 +19,14 @@
 		position relative
 		color #FFF72E
 		font-size 20px
+		margin-top 0
 		margin-bottom 25px
 
 	&__map-nav
 		position relative
+		padding-left 0
+		margin 0
+		list-style-type none
 
 	&__map-nav-item
 		position relative
@@ -43,15 +47,16 @@
 		position relative
 		display flex
 		flex-direction column
-		align-items center
+		align-items flex-end
 		@media screen and (max-width: $mobile-width)
 			margin-bottom 20px
+			align-items center
 
 	&__logo-footer
 		position relative
 		display block
-		width 250px
-		height 80px
+		width 340px
+		height 115px
 		margin-bottom 80px
 		@media screen and (max-width: $mobile-width)
 			display none
@@ -64,6 +69,7 @@
 	&__wrap-links-partner
 		position relative
 		display flex
+		margin-bottom 25px
 
 	&__link-partner
 		position relative
@@ -84,16 +90,15 @@
 		position relative
 		display flex
 		flex-direction column
-		align-items flex-end
+		align-items center
 		@media screen and (max-width: $mobile-width)
 			align-items center
 
 	&__socials
 		position relative
 		display flex
-		margin-bottom 35px
 		@media screen and (max-width: $mobile-width)
-			margin-bottom 20px
+			margin-bottom 30px
 
 	&__social-link
 		position relative

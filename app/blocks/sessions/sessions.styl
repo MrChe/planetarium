@@ -14,6 +14,7 @@
 	&__title
 		position relative
 		font-size 36px
+		margin-top 0
 		margin-bottom 40px
 		color white
 		text-transform uppercase
@@ -41,22 +42,22 @@
 		position relative
 		display block
 		font-size 0
+		height 350px
+		@media screen and (max-width: $laptop-width)
+			height 250px
 
 	&__card-img
 		position relative
 		max-width 100%
-		height auto
+		height 100%
 
 	&__card-title
 		position relative
 		margin-top 20px
 		display block
-		text-align left
 		color #eee026
 		font-size 20px
 		transition all .25s
-		@media screen and (max-width: $laptop-width)
-			text-align center
 
 	&__link-all
 		position relative
